@@ -3,7 +3,7 @@ clear;
 clc;
 
 %% Reading input
-Im = imread('image.jpg');
+Im = imread('../raw/image.jpg');
 [N,M,T] = size(Im); % Image size
 
 %% Initialization
