@@ -16,10 +16,13 @@
 - Miraiza Elisa Merculio
 - ![Reynel Soliven](https://github.com/nel-25010)
   
-**Professor:** Engr. Perferinda P. Caubang
+Professor: **Engr. Perferinda P. Caubang**
+
 August 2, 2023
 
+## Table of Contents
 - [Image Segmentation](#image-segmentation)
+  - [Table of Contents](#table-of-contents)
   - [What is Image Segmentation?](#what-is-image-segmentation)
   - [Point, Line, and Edge Detection](#point-line-and-edge-detection)
     - [Point Detection](#point-detection)
@@ -70,23 +73,26 @@ Edges are pixels where brightness changes abruptly.
 
 ### Line Detection Using Hough Transform
 ![](resources/images/2023-08-02-14-04-59.png)
+
 A computer vision technique for identifying straight lines in an image is called line detection using the Hough Transform. 
 
 The concept entails representing each pixel of the image as a point in a parameter space representation, with lines acting as the image's other primary objects. 
 
 ## Thresholding
 ![](resources/images/2023-08-02-14-06-13.png)
+
 A fundamental image processing technique that converts a grayscale image into a binary image by separating objects or regions from the background. 
 
 This is achieved by classifying pixels into two categories based on a threshold value: foreground (object) pixels and background pixels.
 
-1. Grayscale Image: Thresholding is typically applied to grayscale images. If the input image is in color, it is first converted into grayscale.
-2. Choosing a Threshold Value: selecting an appropriate threshold value.
-3. Binary Image Creation: After selecting the threshold value, each pixel in the grayscale image is compared to the threshold.
+1. **Grayscale Image**: Thresholding is typically applied to grayscale images. If the input image is in color, it is first converted into grayscale.
+2. **Choosing a Threshold Value**: selecting an appropriate threshold value.
+3. **Binary Image Creation**: After selecting the threshold value, each pixel in the grayscale image is compared to the threshold.
 
 ## Region Based Segmentation
 There are four primary sub-topics under region-based segmentation, these are: region growing, region splitting, region merging, and region labeling.
-![](resources/images/2023-08-02-14-07-52.png)
+
+![](resources/images/2023-08-02-14-15-12.png)
 
 ### Region Splitting
 Entire image is assumed as a single region. Then the homogeneity(similarity) test is applied, where pixels that are similar are grouped together. If the conditions are not met, then the regions are split into four quadrants, or else leave the region as it is.
@@ -99,12 +105,14 @@ This is the combination of the two topics that we discussed, this is simply the 
 ## Watershed Transform
 ![](resources/images/2023-08-02-14-08-55.png)
 
+Watershed image segmentation is a popular technique in digital image processing that aims to partition an image into distinct regions or objects based on the concept of watershed transformation from hydrology. It treats the image as a topographic landscape, with pixel intensity values representing elevation. Local minima are identified as "basins," and a flooding process is initiated, gradually filling each basin with water until their boundaries merge. The merging points represent regional boundaries, resulting in a segmentation map with each object or region labeled uniquely. Despite its utility in object detection and medical image analysis, watershed segmentation can be sensitive to noise and over-segmentation, often requiring additional post-processing for result refinement.
+
 This is the combination of the two topics that we discussed, this is simply the process of applying splitting and merging into one whole image. Following the same rules and guidelines as the previous topics, just combined into one image.
 
 **Distance Transform**: a tool commonly used with the watershed transform for segmentation.
 ![](resources/images/2023-08-02-14-09-50.png)
 
 For further information, please refer to the following links:
-- Canva presentation: ![link here](https://www.canva.com/design/DAFpFdbgn1Y/-e0-Sxc6q45F6oV210GYfg/edit?utm_content=DAFpFdbgn1Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- ![Canva presentation:](https://www.canva.com/design/DAFpFdbgn1Y/-e0-Sxc6q45F6oV210GYfg/edit?utm_content=DAFpFdbgn1Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ![](resources/images/2023-08-02-14-11-32.png)
