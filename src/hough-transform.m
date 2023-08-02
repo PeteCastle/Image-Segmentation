@@ -1,6 +1,6 @@
 clc; close all; clear all;
 
-image=imread('jabee.jpeg');
+image=imread('../raw/jabee.jpeg');
 imshow(image),title('original image');
 %% 
 
